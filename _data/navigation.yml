@@ -1,0 +1,9 @@
+main:
+  - name: 'Home'
+    url: '/'
+  - name: 'Elwha Suite'
+    url: '/elwha/'
+  - name: 'Yakima Suite'
+    url: '/yakima/'
+  - name: 'Contact Us'
+    url: '/contact/'
