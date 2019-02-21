@@ -22,7 +22,7 @@
                     </li>
                     {%- for item in site.data.navigation.main -%}
                         <li>
-                            <a href="{{- 'item.url' | relative_url -}}">
+                            <a href="{{- item.url | relative_url -}}">
                                 {{- item.name -}}
                             </a>
                         </li>
