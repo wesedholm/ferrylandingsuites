@@ -1,4 +1,3 @@
-<!-- Portfolio Grid Section -->
 <section class="home-suites bg-light-gray">
     <div class="container">
         <div class="row">
@@ -11,24 +10,31 @@
         </div>
         <div class="row home-suites__items">
             {% for suite in site.data.suites.suites %}
-                <div class="col-md-6 col-sm-6 portfolio-item">
-                    <a href="{{- suite.url | relative_url -}}" class="portfolio-link">
+                <div class="col-md-6 portfolio-item">
+                    <a href="{{- suite.link.url | relative_url -}}" class="portfolio-link">
                         <img src="{{- suite.photo.path | relative_url -}}" class="img-responsive img-centered" alt="{{- suite.photo.alt_text -}}">
                     </a>
-                    <div class="portfolio-caption text-center">
+                    <div class="portfolio-caption home-suites__caption">
                         <h4>
-                            <a class="home-suites__link home-suites__link--title" href="{{- suite.url | relative_url -}}">
+                            <a class="home-suites__link home-suites__link--title" href="{{- suite.link.url | relative_url -}}">
                                 {{- suite.name -}}
                             </a>
                         </h4>
                         <p class="text-muted home-suites__item-desc">
                             {{ suite.description }}
                         </p>
-                        <p>
-                            <a href="#services" class="page-scroll btn btn-lg">
-                                Tell Me More</a>
+                    </div>
+                    <div class="row home-suites__buttons">
+                        <div class="col-md-6">
+                            <a href="{{- suite.link.url | relative_url -}}" class="page-scroll btn btn-lg">
+                                {{- suite.link.text -}}
                             </a>
-                        </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{- suite.book.url | relative_url -}}" class="page-scroll btn btn-lg">
+                                {{- suite.book.text -}}
+                            </a>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
