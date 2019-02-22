@@ -30,4 +30,45 @@
 .desc {
     font-size: 18px;
     color: $color_muted;
+    line-height: 2;
+}
+
+blockquote {
+    position: relative;
+    border: none;
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 56px;
+        height: 56px;
+        top: -23px;
+        left: -23px;
+        z-index: -1;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(/assets/img/quote.svg);
+    }
+    p:last-of-type {
+        position: relative;
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 56px;
+            height: 56px;
+            bottom: 0;
+            right: -23px;
+            z-index: -1;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(/assets/img/quote.svg);
+            transform: rotateY(180deg);
+        }
+    }
+    footer {
+        text-align: left;
+    }
 }
