@@ -1,0 +1,14 @@
+.btn-lg {
+    color: #fff;
+    background-color: $color_primary;
+}
+
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active,
+.btn-lg.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: $color_primary;
+    color: #fff;
+    background-color: $color_secondary;
+}

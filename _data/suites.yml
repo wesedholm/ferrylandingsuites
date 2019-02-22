@@ -1,0 +1,22 @@
+suites:
+  - name: 'The Yakima Suite'
+    description: 'A quaint one-room studio'
+    url: '/yakima/'
+    photo:
+      path: https://via.placeholder.com/400x300
+      alt_text: 'The Yakima Suite'
+    book:
+      text: 'Book the Yakima Suite'
+      url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67007
+
+  - name: 'The Elwha Suite'
+    description: 'A spacious two-bedroom abode'
+    url: '/elwha/'
+    photo:
+      path: https://via.placeholder.com/400x300
+      alt_text: 'The Elwha Suite'
+    book:
+      text: 'Book the Elwha Suite'
+      url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67008
+
+description: Weekends in the summer season are a two-night minimum. Rates for the Yakima Suite reflect double occupancy; rates for the Elwha Suite reflect two couples. Additional discounts apply when you book five or more consecutive nights. No pets please.       
