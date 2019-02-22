@@ -1,14 +1,33 @@
-.btn-lg {
+.btn {
     color: #fff;
     background-color: $color_primary;
 }
 
-.btn-lg:hover,
-.btn-lg:focus,
-.btn-lg:active,
-.btn-lg.active,
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
 .open .dropdown-toggle.btn-xl {
     border-color: $color_primary;
     color: #fff;
     background-color: $color_secondary;
+}
+
+.btn--alt {
+    background-color: $color_alt;
+    border-color: $color_alt;
+}
+
+.btn--alt:hover,
+.btn--alt:focus,
+.btn--alt:active,
+.btn--alt.active {
+    background-color: $color_alt_secondary;
+    border-color: $color_alt_secondary;
+}
+
+.desc {
+    font-size: 18px;
+    color: $color_muted;
 }

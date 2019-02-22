@@ -10,8 +10,8 @@
         </div>
         <div class="row home-suites__items">
             {% for suite in site.data.suites.suites %}
-                <div class="col-md-6 portfolio-item">
-                    <a href="{{- suite.link.url | relative_url -}}" class="portfolio-link">
+                <div class="col-sm-6 col-md-6 portfolio-item home-suites__item">
+                    <a href="{{- suite.link.url | relative_url -}}" class="portfolio-link home-suites__link--img">
                         <img src="{{- suite.photo.path | relative_url -}}" class="img-responsive img-centered" alt="{{- suite.photo.alt_text -}}">
                     </a>
                     <div class="portfolio-caption home-suites__caption">
@@ -25,13 +25,13 @@
                         </p>
                     </div>
                     <div class="row home-suites__buttons">
-                        <div class="col-md-6">
-                            <a href="{{- suite.link.url | relative_url -}}" class="page-scroll btn btn-lg">
+                        <div class="col-sm-12 col-lg-6 home-suites__button-wrapper">
+                            <a href="{{- suite.link.url | relative_url -}}" class="page-scroll btn btn-lg home-suites__button home-suites__button--more">
                                 {{- suite.link.text -}}
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <a href="{{- suite.book.url | relative_url -}}" class="page-scroll btn btn-lg">
+                        <div class="col-sm-12 col-lg-6">
+                            <a target="_blank" href="{{- suite.book.url | relative_url -}}" class="page-scroll btn btn-lg btn--alt home-suites__button home-suites__button--book">
                                 {{- suite.book.text -}}
                             </a>
                         </div>
@@ -39,5 +39,9 @@
                 </div>
             {% endfor %}
         </div>
+
+        <p class="desc">
+            {{ site.data.suites.description }}
+        </p>
     </div>
 </section>
