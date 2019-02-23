@@ -1,25 +1,13 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<footer class="site-footer bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <img class="site-footer__logo-img img-responsive img-centered" src="{{- '/assets/img/logos/dark-large.png' -}}" alt="Ferry Landing Suites logo.">
+            <h3 class="site-footer__text site-footer__text--subtitle">
+                At Friday Harbor
+            </h3>
+            <p class="site-footer__contact">
+                800-391-8190 • 85 Front Street, Friday Harbor, WA 98250
+            </p>
         </div>
-    </footer>
+    </div>
+</footer>

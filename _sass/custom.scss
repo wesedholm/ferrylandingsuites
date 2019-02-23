@@ -1,3 +1,10 @@
+.navbar-brand {
+    padding: 0;
+    img {
+        width: 180px;
+    }
+}
+
 .info {
 
     padding: 50px 0;
@@ -76,6 +83,29 @@
 
     label {
         color: #fff;
+    }
+
+}
+
+.site-footer {
+
+    text-align: center;
+    padding: 50px 0;
+
+    &__text {
+        color: $color_dark;
+        text-transform: none;
+
+        &--subtitle {
+            font-family: $font_secondary;
+            font-style: italic;
+            font-size: 36px;
+        }
+    }
+
+    &__contact {
+        font-size: 22px;
+        padding: 18px 0;
     }
 
 }
