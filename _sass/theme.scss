@@ -656,68 +656,71 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color: #222;
-    background-image: url('/assets/img/map-image.png');
+.contact-section {
+    // background-color: #222;
+    // background-image: url('/assets/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+.contact-section .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+.contact-section .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+.contact-section .form-group input,
+.contact-section .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+.contact-section .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
-    height: 236px;
+.contact-section .form-group textarea.form-control {
+    height: 200px;
+    @include breakpoint(md) {
+        height: 340px;
+    }
 }
 
-section#contact .form-control:focus {
+.contact-section .form-control:focus {
     border-color: $color_primary;
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+.contact-section::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: $font_primary;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+.contact-section:-moz-placeholder {
     text-transform: uppercase;
     font-family: $font_primary;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+.contact-section::-moz-placeholder {
     text-transform: uppercase;
     font-family: $font_primary;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+.contact-section:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: $font_primary;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+.contact-section .text-danger {
     color: #e74c3c;
 }
 

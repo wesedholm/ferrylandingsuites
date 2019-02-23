@@ -61,3 +61,21 @@
     }
 
 }
+
+.contact-section {
+
+    &__container {
+        padding: 36px 20px;
+        background-color: rgba($color_alt_secondary, .85);
+        border-radius: 6px;
+    }
+
+    &__fields {
+        margin: 26px 0;
+    }
+
+    label {
+        color: #fff;
+    }
+
+}
