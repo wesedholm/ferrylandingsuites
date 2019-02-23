@@ -1,49 +1,50 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{- '/' | relative_url -}}">
-                    <img src="{{- '/assets/img/logos/small.png' | relative_url -}}" alt="Ferry Landing Suites logo.">
-                </a>
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{- '/' | relative_url -}}">
+                <img src="{{- '/assets/img/logos/small.png' | relative_url -}}" alt="Ferry Landing Suites logo.">
+            </a>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                {%- for item in site.data.navigation.main -%}
+                    <li>
+                        <a href="{{- item.url | relative_url -}}">
+                            {{- item.name -}}
+                        </a>
                     </li>
-                    {%- for item in site.data.navigation.main -%}
-                        <li>
-                            <a href="{{- item.url | relative_url -}}">
-                                {{- item.name -}}
-                            </a>
-                        </li>
-                    {%- endfor -%}                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+                {%- endfor -%}                    
+            </ul>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
-    <!-- Header -->
-    <header class="parallax-window" data-parallax="scroll" data-image-src="/assets/img/header-bg.png">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Nested in the heart of</div>
-                <div class="intro-heading">Friday Harbor</div>
-                {%- comment -%} <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> {%- endcomment -%}
-            </div>
+<!-- Header -->
+<header class="parallax-window" data-parallax="scroll" data-image-src="/assets/img/header-bg.png">
+    <div class="container">
+        <div class="intro-text">
+            <img class="img-responsive img-centered" src="{{- '/assets/img/logos/light-large.png' -}}" alt="Ferry Landing Suites logo.">
+            <div class="intro-lead-in">Nested in the heart of</div>
+            <div class="intro-heading">Friday Harbor</div>
+            {%- comment -%} <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> {%- endcomment -%}
         </div>
-    </header>
+    </div>
+</header>
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
