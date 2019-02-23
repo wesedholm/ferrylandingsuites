@@ -75,6 +75,10 @@
 
 .contact-section {
 
+    &__title {
+        letter-spacing: 2px;
+    }
+
     &__container {
         padding: 36px 20px;
         background-color: rgba($color_alt_secondary, .85);
