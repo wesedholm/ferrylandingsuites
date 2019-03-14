@@ -16,6 +16,7 @@ var cbpAnimatedHeader = (function() {
 		changeHeaderOn = 100;
 
 	function init() {
+		add_dark_bg();
 		window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;
@@ -35,10 +36,19 @@ var cbpAnimatedHeader = (function() {
 		didScroll = false;
 	}
 
+	function add_dark_bg() {
+		var sy = scrollY();
+		if ( sy >= changeHeaderOn ) {
+			classie.add( header, 'dark-bg' );
+		}
+	}
+
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop;
 	}
 
 	init();
+
+	console.log('hello!')
 
 })();

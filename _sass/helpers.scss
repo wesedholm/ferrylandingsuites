@@ -3,7 +3,6 @@
     background-color: $color_primary;
 }
 
-
 .btn:hover,
 .btn:focus,
 .btn:active,
@@ -75,4 +74,8 @@ blockquote {
     footer {
         text-align: left;
     }
+}
+
+.dark-bg {
+    background-color: #222;
 }
