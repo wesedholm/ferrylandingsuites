@@ -1,3 +1,18 @@
+.navbar-container {
+    position: relative;
+    @media(min-width: 768px) {
+        width: 98%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @media(min-width: 992px) {
+        width: 970px;
+    }
+    @media(min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
 .navbar-brand {
     padding: 0;
     position: absolute;
@@ -5,16 +20,16 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     img {
-        width: 180px;
+        width: 205px;
         position: relative;
-        top: 8px;
+        top: 4px;
         @media(min-width: 768px) {
             width: 205px;
-            top: -4px;
+            top: -6px;
         }
         @media(min-width: 992px) {
-            width: 230px;
-            top: 0;
+            width: 235px;
+            top: -8px;
         }
     }
 }
@@ -30,29 +45,26 @@ ul.navbar-nav {
             &:hover {
                 text-decoration: none;
             }
+            @media(min-width: 768px){
+                float: left;
+            }
         }
     }
     @media(min-width: 768px){
         width: 100%;
         li {
-            a {
-
-                &.first {
-                    padding-left: 0;
-                }
-                &.last {
-                    padding-right: 0;
-                }
-            }
+            float: left;
         }
     }
 }
 
-.navbar-container {
-    position: relative;
-    @media(min-width: 768px) {
-        padding-left: 0;
-        padding-right: 0;
+
+.navbar-part {
+    @media(min-width: 768px){
+        float: left;
+        &.right {
+            float: right;
+        }
     }
 }
 
