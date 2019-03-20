@@ -49,6 +49,4 @@ var cbpAnimatedHeader = (function() {
 
 	init();
 
-	console.log('hello!')
-
 })();

@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{- '/' | relative_url -}}">
-                <img src="{{- '/assets/svg/Horizontal_white_half.svg' | relative_url -}}" alt="Ferry Landing Suites logo.">
+                <img src="{{- '/assets/svg/Horizontal_white.svg' | relative_url -}}" alt="Ferry Landing Suites logo.">
             </a>
         </div>
 
@@ -21,7 +21,7 @@
                     <a href="#page-top"></a>
                 </li>
                 {%- for item in site.data.navigation.main -%}
-                    <li>
+                    <li class="{% if forloop.index <= 2 %}left{% else %}right{% endif %}">
                         <a href="{{- item.url | relative_url -}}">
                             {{- item.name -}}
                         </a>

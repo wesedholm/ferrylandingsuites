@@ -1,0 +1,19 @@
+.navbar-brand {
+    padding: 0;
+    img {
+        width: 180px;
+        @media(min-width: 768px) {
+            width: 205px;
+            position: relative;
+            top: -12px;
+        }
+        @media(min-width: 992px) {
+            width: 230px;
+            top: 0;
+        }
+    }
+}
+
+.intro-lead-in {
+    margin: 50px 0 30px 0;
+}
