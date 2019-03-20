@@ -1,6 +1,6 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container navbar-container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -16,17 +16,30 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
+
                 {%- for item in site.data.navigation.main -%}
-                    <li class="{% if forloop.index <= 2 %}left{% else %}right{% endif %}">
-                        <a href="{{- item.url | relative_url -}}">
-                            {{- item.name -}}
-                        </a>
-                    </li>
-                {%- endfor -%}                    
+                    {%- assign loopindex = forloop.index | modulo: 2 -%}
+                    {%- if loopindex == 1 -%}
+                        <div class="navbar-part {% if forloop.index <= 2 %}left{% else %}right{% endif %}">
+                           <li class="{% if forloop.index <= 2 %}left{% else %}right{% endif %}">
+                                <a {% if forloop.first %}class="first"{% elsif forloop.last %}class="last"{% endif %} href="{{- item.url | relative_url -}}">
+                                    {{- item.name -}}
+                                </a>
+                            </li> 
+                    {%- else -%}
+                            <li class="{% if forloop.index <= 2 %}left{% else %}right{% endif %}">
+                                <a {% if forloop.first %}class="first"{% elsif forloop.last %}class="last"{% endif %} href="{{- item.url | relative_url -}}">
+                                    {{- item.name -}}
+                                </a>
+                            </li>
+                        </div>
+                    {%- endif -%}
+                {% endfor %}
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
