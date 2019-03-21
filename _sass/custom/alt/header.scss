@@ -1,0 +1,120 @@
+.navbar-container {
+    position: relative;
+    @media(min-width: 768px) {
+        width: 98%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @media(min-width: 992px) {
+        width: 970px;
+    }
+    @media(min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    img {
+        width: 205px;
+        position: relative;
+        top: 4px;
+        @media(min-width: 768px) {
+            width: 205px;
+            top: -6px;
+        }
+        @media(min-width: 992px) {
+            width: 235px;
+            top: -8px;
+        }
+    }
+}
+
+ul.navbar-nav {
+    li {
+        a {
+            color: $color_dark !important;
+            padding: 10px 15px;
+            display: block;
+            -webkit-transition: all ease .35s;
+            -moz-transition: all ease .35s;
+            transition: all ease .35s;
+            &:hover {
+                text-decoration: none;
+                color: $color_muted !important;
+            }
+            @media(min-width: 768px){
+                float: left;
+            }
+        }
+    }
+    @media(min-width: 768px){
+        width: 100%;
+        li {
+            float: left;
+        }
+    }
+}
+
+
+.navbar-part {
+    @media(min-width: 768px){
+        float: left;
+        &.right {
+            float: right;
+        }
+    }
+}
+
+.intro-lead-in {
+    margin: 50px 0 30px 0;
+}
+
+.navbar,
+.navbar-shrink {
+    background-color: #fff !important;
+    border-bottom: 2px solid #eee;
+}
+
+header {
+    .intro-text {
+        text-shadow: 0 0 4px #000;
+
+        img {
+            max-width: 80%;
+            @media(min-width: 768px){
+                max-width: 70%;
+            }
+            @media(min-width: 992px){
+                max-width: 60%;
+            }
+        }
+
+        .intro-lead-in {
+            font-size: 18px;
+            margin-bottom: 6px;
+            @media(min-width: 768px){
+                font-size: 24px;
+            }
+            @media(min-width: 992px){
+                font-size: 28px;
+            }
+
+        }
+
+        .intro-heading {
+            font-size: 30px;
+            @media(min-width: 768px){
+                font-size: 40px;
+            }
+            @media(min-width: 992px){
+                font-size: 45px;
+            }
+        }
+
+    }
+}
