@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "vars";
+@import "bootstrap";
+@import "font-awesome";
+@import "theme";
+@import "helpers";
+
+@import "custom/alt2/helpers";
+@import "custom/alt2/header";
+@import "custom/alt2/home-suites";
+@import "custom/alt2/contact";
+@import "custom/alt2/footer";

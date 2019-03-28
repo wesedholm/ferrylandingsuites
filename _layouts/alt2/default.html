@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include alt2/head.html %}
+
+  <body id="page-top" class="index">
+
+    {% include alt2/header.html %}
+    {% include info.html %}
+    {%- include home/suites.html -%}
+    {% include quote.html %}
+    {% include separator.html %}
+    {% include contact.html %}
+    {% include footer.html %}
+    {% include js.html %}
+
+  </body>
+
+</html>

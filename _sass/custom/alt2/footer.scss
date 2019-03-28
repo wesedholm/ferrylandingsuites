@@ -1,0 +1,36 @@
+.site-footer {
+
+    text-align: center;
+    padding: 50px 0;
+
+    &__logo-img {
+        width: 600px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    &__text {
+        color: $color_dark;
+        text-transform: none;
+
+        &--subtitle {
+            font-family: $font_secondary;
+            font-style: italic;
+            font-size: 36px;
+        }
+    }
+
+    &__contact {
+        font-size: 22px;
+        padding: 18px 0;
+    }
+
+    &__connect-link {
+        letter-spacing: 2px;
+    }
+
+    &__copyright {
+        margin-top: 60px;
+    }
+
+}
