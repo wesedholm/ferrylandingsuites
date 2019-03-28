@@ -1,18 +1,9 @@
-<footer class="site-footer bg-light-gray">
+<footer class="site-footer parallax-window dark-overlay" data-parallax="scroll" data-image-src="{{- '/assets/img/footer-bg.jpg' | relative_url-}}">
     <div class="container">
         <div class="row">
-            <img class="site-footer__logo-img img-responsive img-centered" src="{{- '/assets/svg/Horizontal_black.svg' -}}" alt="Ferry Landing Suites logo.">
-            <h3 class="site-footer__text site-footer__text--subtitle">
-                At Friday Harbor
-            </h3>
+            <img class="site-footer__logo-img img-responsive img-centered" src="{{- '/assets/svg/Horizontal_white.svg' -}}" alt="Ferry Landing Suites logo.">
             <p class="site-footer__text site-footer__contact">
                 800-391-8190 • 85 Front Street, Friday Harbor, WA 98250
-            </p>
-            <a href="{{- '/contact/' |relative_url -}}" class="btn btn-xl btn--alt site-footer__connect-link">
-                Connect
-            </a>
-            <p class="site-footer__text site-footer__copyright">
-                ©{{ site.time {{ site.date | date: '%Y' }} Ferry Landing Suites. All Rights Reserved.    
             </p>
         </div>
     </div>
