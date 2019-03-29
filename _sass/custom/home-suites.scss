@@ -36,6 +36,17 @@
     &__button {
         font-family: $font_primary;
         width: 100%;
+        $var1: #cbb069;
+        &--var1 {
+            background-color: $var1;
+            border-color: $var1;
+            color: $color_dark;
+            &:hover {
+                background-color: darken($var1, 5%);
+                border-color: darken($var1, 5%);
+                color: $color_dark;
+            }
+        }
     }
 
     &__item-desc {

@@ -16,8 +16,10 @@ $color_secondary_dark: #333;
 $color_muted: #777;
 $color_dark: #333;
 
-$color_alt: #3498db;
-$color_alt_secondary: #2980b9;
+$color_alt_initial: #3498db;
+$color_alt: darken($color_alt_initial, 35%);
+$color_alt_secondary_initial: #2980b9;
+$color_alt_secondary: darken($color_alt_initial, 30%);
 
 $font_primary: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
 $font_secondary: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;

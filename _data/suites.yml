@@ -2,7 +2,7 @@ suites:
   - name: 'The Yakima Suite'
     description: 'A quaint one-room studio'
     link:
-      text: 'Learn More'
+      text: 'View Details'
       url: '/yakima/'
     photo:
       path: images/FLS-building-070115-2-home-page.jpg
@@ -14,7 +14,7 @@ suites:
   - name: 'The Elwha Suite'
     description: 'A spacious two-bedroom abode'
     link:
-      text: 'Learn More'
+      text: 'View Details'
       url: '/elwha/'
     photo:
       path: images/FLS-building-070115-11-home-page.jpg
