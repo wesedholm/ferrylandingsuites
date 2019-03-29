@@ -20,13 +20,23 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     img {
-        width: 205px;
         position: relative;
+        width: 205px;
         top: 4px;
         @media(min-width: 768px) {
             width: 205px;
             top: -6px;
         }
+        @media(min-width: 992px) {
+            width: 275px;
+            top: -15px;
+        }
+    }
+}
+
+.navbar-logo-img {
+    transition: all .3s;
+    &.narrow {
         @media(min-width: 992px) {
             width: 235px;
             top: -8px;

@@ -28,8 +28,8 @@
             top: -6px;
         }
         @media(min-width: 992px) {
-            width: 235px;
-            top: -8px;
+            width: 275px;
+            top: -15px;
         }
     }
 }
@@ -70,6 +70,16 @@ ul.navbar-nav {
 
 .intro-lead-in {
     margin: 50px 0 30px 0;
+}
+
+.navbar-logo-img {
+    transition: all .3s;
+    &.narrow {
+        @media(min-width: 992px) {
+            width: 235px;
+            top: -8px;
+        }
+    }
 }
 
 header {
