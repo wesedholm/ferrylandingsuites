@@ -53,7 +53,7 @@
             }
         }
         &--var2 {
-            background-color: #fff;
+            background-color: transparent;
             border-color: #0e354f;
             border-width: 2px;
             color: #0e354f;
@@ -83,6 +83,17 @@
                 color: #fff;
             }
         }
+        &--var5 {
+            background-color: transparent;
+            border-color: #0e354f;
+            border-width: 2px;
+            color: #0e354f;
+            &:hover {
+                background-color: #0e354f;
+                border-color: #0e354f;
+                color: #fff;
+            }
+        }        
         
     }
 
