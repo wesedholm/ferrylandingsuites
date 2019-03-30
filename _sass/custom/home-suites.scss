@@ -36,6 +36,7 @@
     &__button {
         font-family: $font_primary;
         width: 100%;
+        transition: all .3s;
         $var1: #cbb069;
         &--var1 {
             background-color: $var1;
@@ -47,6 +48,38 @@
                 color: $color_dark;
             }
         }
+        &--var2 {
+            background-color: #fff;
+            border-color: #0e354f;
+            border-width: 2px;
+            color: #0e354f;
+            &:hover {
+                background-color: #fff;
+                border-color: lighten(#124364, 10%);
+                color: lighten(#124364, 10%);
+            }
+        }
+        &--var3 {
+            background-color: $color_muted;
+            border-color: $color_muted;
+            color: #fff;
+            &:hover {
+                background-color: darken($color_muted, 5%);
+                border-color: darken($color_muted, 5%);
+                color: #fff;
+            }
+        }
+        &--var4 {
+            background-color: $color_dark;
+            border-color: $color_dark;
+            color: #fff;
+            &:hover {
+                background-color: $color_muted;
+                border-color: $color_muted;
+                color: #fff;
+            }
+        }
+        
     }
 
     &__item-desc {
