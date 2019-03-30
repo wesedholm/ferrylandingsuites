@@ -1,5 +1,9 @@
 .home-suites {
 
+    & &__heading {
+        margin-bottom: 40px;
+    }
+
     &__item {
         margin-bottom: 40px;
         text-align: center;
