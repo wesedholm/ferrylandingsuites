@@ -1,21 +1,21 @@
-.contact-section {
+.contact-us {
 
-    &__title {
-        letter-spacing: 2px;
+    &__heading {
+        color: $color_muted;
     }
 
-    &__container {
-        padding: 36px 20px;
-        background-color: rgba($color_alt_secondary, .85);
-        border-radius: 6px;
-    }
-
-    &__fields {
-        margin: 26px 0;
-    }
-
-    label {
-        color: #fff;
+    &__info {
+        text-align: center;
+        .heading {
+            font-size: 22px;
+            text-transform: none;
+            font-style: italic;
+            color: $color_dark;
+        }
+        p {
+            font-family: $font_primary;
+            font-size: 18px;
+        }
     }
 
 }
