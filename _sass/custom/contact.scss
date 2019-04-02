@@ -22,6 +22,12 @@
 
 .getting-there {
 
+    &__row {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
     &__title {
         text-align: center;
         text-transform: none;
@@ -33,11 +39,8 @@
     &__item {
         text-align: center;
         color: #fff;
-        padding: 15px;
-        min-height: 300px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+        min-height: 265px;
+        padding: 0 30px;
         p {
             font-family: $font_primary;
             font-size: 18px;
@@ -50,6 +53,14 @@
                 }
             }
         }
+    }
+    
+    &__item-content {
+        padding: 15px;
+        min-height: inherit;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 
     &__heading {
