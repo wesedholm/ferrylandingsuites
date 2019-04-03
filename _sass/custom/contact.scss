@@ -41,6 +41,12 @@
         color: #fff;
         min-height: 265px;
         padding: 0 30px;
+        &:first-of-type {
+            margin-bottom: 20px;
+            @media(min-width: 992px) {
+                margin-bottom: 0;
+            }
+        }
         p {
             font-family: $font_primary;
             font-size: 18px;

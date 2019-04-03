@@ -21,17 +21,19 @@
                 </li>
 
                 {%- for item in site.data.navigation.main -%}
+                    {%- assign nav_url = item.url | remove: '/' -%}
+                    {%- assign page_url = page.url | remove: '/' | remove: '.html' -%}
                     {%- assign loopindex = forloop.index | modulo: 2 -%}
                     {%- if loopindex == 1 -%}
                         <div class="navbar-part {% if forloop.index <= 2 %}left{% else %}right{% endif %}">
                            <li class="{% if forloop.index <= 2 %}left{% else %}right{% endif %}">
-                                <a {% if forloop.first %}class="first"{% elsif forloop.last %}class="last"{% endif %} href="{{- item.url | relative_url -}}">
+                                <a class="{% if forloop.first %}first{% elsif forloop.last %}last{% endif %}{% if nav_url == page_url %} active{% endif %}" href="{{- item.url | relative_url -}}">
                                     {{- item.name -}}
                                 </a>
                             </li> 
                     {%- else -%}
                             <li class="{% if forloop.index <= 2 %}left{% else %}right{% endif %}">
-                                <a {% if forloop.first %}class="first"{% elsif forloop.last %}class="last"{% endif %} href="{{- item.url | relative_url -}}">
+                                <a class="{% if forloop.first %}first{% elsif forloop.last %}last{% endif %}{% if nav_url == page_url %} active{% endif %}" href="{{- item.url | relative_url -}}">
                                     {{- item.name -}}
                                 </a>
                             </li>

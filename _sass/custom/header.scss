@@ -58,6 +58,9 @@ ul.navbar-nav {
             @media(min-width: 768px){
                 float: left;
             }
+            &.active {
+                color: $color_primary;
+            }
         }
     }
     @media(min-width: 768px){
