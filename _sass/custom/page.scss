@@ -1,5 +1,13 @@
 .page {
 
+    &__header {
+        .page__intro-text {
+            padding: 125px 0 100px;
+            text-align: left;
+        }
+    }
+
+
     &__wrapper {
         padding-top: 45px;
         padding-bottom: 45px;

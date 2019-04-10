@@ -40,89 +40,48 @@ layout: page
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading contact-us__heading">
-                    Getting There
+                    {{- page.getting_here.title -}}
                 </h2>
             </div>
         </div>
 
-        <div class="row getting-there__row">
-
-            <h3 class="getting-there__title">
-                By Boat
-            </h3>
-        
-            <div class="col-md-6 getting-there__item">
-                <div class="getting-there__item-content darker-overlay" style="background-image: url({{- '/assets/img/contact/wsdot.jpg' | relative_url -}})">                
-                    <h4 class="getting-there__heading">
-                        Washington State Ferries
-                    </h4>
-                    <p>
-                        This mode of transportation will give you a spectacular view of the islands.
-                    </p>
-                    <p>
-                        <a href="http://wsdot.wa.gov/ferries/">wsdot.wa.gov/ferries</a>
-                    </p>
-                    <p>
-                        800.843.3779
-                    </p>
+        {%- for group in page.getting_here.groups -%}
+            <div class="row getting-here__row">
+                <h3 class="getting-here__title">
+                    {{- group.title -}}
+                </h3>
+                <div class="row">
+                    {%- for option in group.options -%}
+                        <div class="getting-here__item row">
+                            <div class="getting-here__item-img-wrapper col-sm-5">
+                                <img class="img-responsive" src="{{- option.image | relative_url -}}" alt="{{- option.title -}}">
+                            </div>
+                            <div class="getting-here__item-content col-sm-7">                
+                                <h4 class="getting-here__heading">
+                                    {{- option.title -}}
+                                </h4>
+                                {%- assign the_length = option.description | split: '' | size -%}
+                                {%- if option.description and the_length > 0 -%}
+                                    {{ option.description | markdownify }}
+                                {%- endif -%}
+                                <p>
+                                    <a href="{{- option.link.url -}}" target="_blank">
+                                        {{- option.link.text -}}
+                                    </a>
+                                </p>
+                                <p>
+                                    {{- option.phone -}}
+                                </p>
+                            </div>
+                        </div>
+                    {%- endfor -%}
                 </div>
             </div>
-
-            <div class="col-md-6 getting-there__item">
-                <div class="getting-there__item-content darker-overlay" style="background-image: url({{- '/assets/img/contact/clipper-vacations.jpg' | relative_url -}})">
-                    <h4 class="getting-there__heading">
-                        Victoria Clipper
-                    </h4>
-                    <p>
-                        <a href="https://www.clippervacations.com/">clippervacations.com/ferries</a>
-                    </p>
-                    <p>
-                        206.448.5000
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row getting-there__row">
-
-            <h3 class="getting-there__title">
-                By Air
-            </h3>
-        
-            <div class="col-md-6 getting-there__item">
-                <div class="getting-there__item-content darker-overlay" style="background-image: url({{- '/assets/img/contact/kenmoreair.jpg' | relative_url -}})">
-                    <h4 class="getting-there__heading">
-                        Kenmore Air
-                    </h4>
-                    <p>
-                        <a href="https://kenmoreair.com/">kenmoreair.com</a>
-                    </p>
-                    <p>
-                        800.543.9595
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6 getting-there__item">
-                <div class="getting-there__item-content darker-overlay" style="background-image: url({{- '/assets/img/contact/sanjuanairlines.jpg' | relative_url -}})">
-                    <h4 class="getting-there__heading">
-                        ViSan Juan Airlines
-                    </h4>
-                    <p>
-                        <a href="http://sanjuanairlines.com/">sanjuanairlines.com</a>
-                    </p>
-                    <p>
-                        800.874.4434
-                    </p>
-                </div>
-            </div>
-
-        </div>
+        {%- endfor -%}
 
     </div>
 
-    <div class="container info">
+    <div class="container info getting-here__info">
         <p class="text-center">
            Parking is available on-site for guests of Ferry Landing Suites. 
         </p>
