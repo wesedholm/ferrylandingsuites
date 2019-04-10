@@ -1,9 +1,16 @@
 .page {
 
-    &__header {
+    & &__header {
+        
         .page__intro-text {
-            padding: 125px 0 100px;
-            text-align: left;
+            padding: 100px 20px 40px;
+            text-align: center;
+            @media (min-width: 120px) {
+                padding: 120px 20px 60px;
+            }
+            .intro-lead-in {
+                margin: 0;
+            }
         }
     }
 
