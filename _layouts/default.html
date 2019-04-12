@@ -13,6 +13,14 @@
     {% include footer.html %}
     {% include js.html %}
 
+    {%- if page.id == 'home' -%}
+      <script>    
+        $(window).on('load', function(){
+          $('.intro-text').addClass('fade-me-in');
+        });  
+      </script>
+    {%- endif -%}
+
   </body>
 
 </html>

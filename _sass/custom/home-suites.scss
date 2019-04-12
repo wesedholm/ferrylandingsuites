@@ -1,7 +1,15 @@
 .home-suites {
 
     & &__heading {
+        margin-bottom: 0;
+    }
+
+    & &__subheading {        
         margin-bottom: 40px;
+        text-transform: none;
+        color: $color_muted;
+        font-weight: normal;
+        font-family: $font_secondary;
     }
 
     &__item {

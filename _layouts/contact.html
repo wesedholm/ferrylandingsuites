@@ -16,21 +16,10 @@ layout: page
     
         <div class="row contact-us__info">
             <h3 class="heading">
-                Ferry Landing Suites
+                {{- page.info.heading -}}
             </h3>
 
-            <p>
-                Steps from the ferry
-            </p>
-            <p>
-                85 Front Street
-            </p>
-            <p>
-                Friday Harbor, WA 98250
-            </p>
-            <p>
-                <strong>toll free:</strong> 800.391.8190
-            </p>        
+            {{ page.info.details | markdownify }}  
         </div>
 
     </div>
@@ -60,15 +49,15 @@ layout: page
                                 <h4 class="getting-here__heading">
                                     {{- option.title -}}
                                 </h4>
-                                {%- assign the_length = option.description | split: '' | size -%}
-                                {%- if option.description and the_length > 0 -%}
-                                    {{ option.description | markdownify }}
-                                {%- endif -%}
                                 <p>
                                     <a href="{{- option.link.url -}}" target="_blank">
                                         {{- option.link.text -}}
                                     </a>
                                 </p>
+                                {%- assign the_length = option.description | split: '' | size -%}
+                                {%- if option.description and the_length > 0 -%}
+                                    {{ option.description | markdownify }}
+                                {%- endif -%}
                                 <p>
                                     {{- option.phone -}}
                                 </p>

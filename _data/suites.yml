@@ -1,6 +1,10 @@
-suites:
+heading: The Suites
+
+subheading: Ferry Landing Suites consists of two charming suites in an historic building...
+
+the_suites:
   - name: 'The Yakima Suite'
-    description: 'A quaint one-room studio'
+    description: 'A studio apartment on the top floor...'
     link:
       text: 'View Details'
       url: '/yakima/'
@@ -12,7 +16,7 @@ suites:
       url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67007
 
   - name: 'The Elwha Suite'
-    description: 'A spacious two-bedroom abode'
+    description: 'A two-bedroom apartment on the second floor...'
     link:
       text: 'View Details'
       url: '/elwha/'

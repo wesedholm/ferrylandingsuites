@@ -87,4 +87,9 @@ ul.navbar-nav {
 
 header {
     background-repeat: no-repeat;
+    
+    .intro-text {
+        opacity: 0;
+        top: $move_intro_text;
+    }
 }
