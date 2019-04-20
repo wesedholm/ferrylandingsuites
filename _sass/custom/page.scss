@@ -3,10 +3,10 @@
     & &__header {
         
         .page__intro-text {
-            padding: 100px 20px 40px;
+            padding: 150px 20px 80px;
             text-align: center;
-            @media (min-width: 120px) {
-                padding: 120px 20px 60px;
+            @media (min-width: 1200px) {
+                padding: 195px 20px 120px;
             }
             .intro-lead-in {
                 margin: 0;
