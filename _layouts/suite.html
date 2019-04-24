@@ -1,0 +1,42 @@
+---
+layout: page
+---
+
+<section class="page__wrapper suite">
+
+    <div class="container page__section">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">
+                    {{- page.title -}}
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container page__section">
+
+        <div class="row">
+            <div class="col-md-5">
+                info
+            </div>
+            <div class="col-md-7">
+                <ul id="lightSlider" class="suite__gallery">
+                    {%- for item in page.images -%}
+                        <li class="suite__gallery-item" data-thumb="{{- item.path | relative_url -}}">
+                            <img class="suite__gallery-img"  src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}">
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container info getting-here__info">
+        <p class="text-center">
+           Parking is available on-site for guests of Ferry Landing Suites. 
+        </p>
+    </div>
+
+</section>    

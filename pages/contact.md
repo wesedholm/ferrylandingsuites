@@ -1,5 +1,6 @@
 ---
 layout: contact
+permalink: /contact/
 title: Contact Us
 info:
   heading: Ferry Landing Suites

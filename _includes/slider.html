@@ -1,0 +1,7 @@
+<ul id="lightSlider">
+    {%- for item in page.images -%}
+        <li data-thumb="{{- item.path | relative_url -}}">
+            <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}">
+        </li>
+    {%- endfor -%}
+</ul>

@@ -9,6 +9,20 @@
 <script src="{{ "/assets/js/classie.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/cbpAnimatedHeader.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/parallax.min.js" | relative_url }}"></script>
+{%- if page.has_slider == true -%}
+    <script src="{{ "/assets/js/lightslider.min.js" | relative_url }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("#lightSlider").lightSlider({
+              gallery: true,
+              item: 1,
+              loop: true,
+              slideMargin: 0,
+              thumbMargin: 5
+          }); 
+        });
+      </script>
+{%- endif -%}
 
 <!-- Contact Form JavaScript -->
 <script src="{{ "/assets/js/jqBootstrapValidation.js" | relative_url }}"></script>
