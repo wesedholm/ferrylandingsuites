@@ -15,7 +15,25 @@
     .lSPager {
 
         &.lSGallery {
-            
+            margin-left: auto;
+            margin-right: auto;
+
+            li {
+                opacity: .55;
+                border-radius: 0;
+                -webkit-transition: opacity .3s linear;
+                transition: opacity .3s linear;
+                &.active,
+                &:hover {
+                    opacity: 1;
+                    border-radius: 0;
+                }
+            }
+
+            img {
+                
+            }
+
         }
     }
 } 
