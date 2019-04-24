@@ -14,13 +14,22 @@
     <script type="text/javascript">
         $(document).ready(function() {
           $("#lightSlider").lightSlider({
+            onSliderLoad: function() {
+                $('#lightSlider').removeClass('cS-hidden');
+              },
               gallery: true,
               item: 1,
               loop: true,
+              auto: true,
+              pauseOnHover: true,
+              pause: 5000,
               slideMargin: 0,
               thumbMargin: 5,
               galleryMargin: 15,
-              thumbItem: 5
+              keyPress: true,
+              thumbItem: 5,
+              nextHtml: '<i class="fa fa-chevron-circle-right ls-control" aria-hidden="true"></i>',
+              prevHtml: '<i class="fa fa-chevron-circle-left ls-control" aria-hidden="true"></i>'
           }); 
         });
       </script>

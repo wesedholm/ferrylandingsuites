@@ -36,4 +36,24 @@
 
         }
     }
-} 
+}
+
+.lSAction {
+
+    & > .lSNext,
+    & > .lSPrev {
+        font-size: 30px;
+        color: #fff;
+        opacity: .9;
+        -webkit-transition: opacity .3s linear;
+                transition: opacity .3s linear;
+        &:hover {
+            opacity: .55;
+        }
+    }
+
+    & > a {
+
+    }
+
+}

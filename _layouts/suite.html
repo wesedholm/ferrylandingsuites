@@ -21,13 +21,7 @@ layout: page
                 info
             </div>
             <div class="col-md-7">
-                <ul id="lightSlider" class="suite__gallery">
-                    {%- for item in page.images -%}
-                        <li class="suite__gallery-item" data-thumb="{{- item.path | relative_url -}}">
-                            <img class="suite__gallery-img"  src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}">
-                        </li>
-                    {%- endfor -%}
-                </ul>
+                {%- include slider.html -%}
             </div>
         </div>
 
