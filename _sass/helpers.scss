@@ -79,3 +79,23 @@ blockquote {
 .dark-bg {
     background-color: #222;
 }
+
+.accent {
+    position: relative;
+    height: 20px;
+    bottom: 0px;
+    @media (min-width: 480px) {
+        height: 25px;
+        bottom: 3px;
+    }
+    @media (min-width: 768px) {
+        height: 35px;
+        bottom: 6px;
+    }
+    &--left {
+        right: 5px;
+    }
+    &--right {
+        left: 5px;
+    }
+}

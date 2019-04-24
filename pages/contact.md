@@ -2,6 +2,7 @@
 layout: contact
 permalink: /contact/
 title: Contact Us
+hero_text: 'Contact info & how to get here'
 info:
   heading: Ferry Landing Suites
   details: |-

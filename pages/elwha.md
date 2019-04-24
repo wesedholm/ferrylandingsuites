@@ -3,6 +3,7 @@ layout: suite
 permalink: /elwha/
 has_slider: true
 title: The Elwha suite
+hero_text: the Elwha suite
 images:
     - path: /images/suites/elwha/IMG_3458.jpg
     - path: /images/suites/elwha/IMG_3459.jpg
