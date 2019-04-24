@@ -16,17 +16,37 @@ layout: page
         </div>
     </div>
 
-    <div class="container page__section">
-
+    <div class="container info">
         <div class="row">
-            <div class="col-md-5">
-                info
+        <div class="col-md-8 col-md-offset-2">
+            {{ page.info | markdownify }}
+        </div>
+        </div>
+    </div>
+
+    <div class="container page__section">
+        <div class="row">
+            <div class="col-md-5 suite__description">
+                {{ page.description | markdownify }}
             </div>
             <div class="col-md-7">
                 {%- include slider.html -%}
             </div>
         </div>
+    </div>
 
+    <div class="container suite__footer">
+        <p>
+            {{ page.footer.message }}
+        </p>
+        <p>
+            {{ page.footer.contact }}
+        </p>
+        <p>
+            <a target="_blank" href="{{ page.button.url }}" class="page-scroll btn btn-lg btn--alt home-suites__button home-suites__button--book suite__button">
+                {{ page.button.text }}
+            </a>
+        </p>
     </div>
 
     <div class="container info getting-here__info">

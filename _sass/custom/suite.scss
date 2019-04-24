@@ -11,12 +11,31 @@
         }
     }
 
+    &__description {
+        color: $color_muted;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    &__button {
+        width: auto;
+        margin: 18px 0;
+    }
+
     &__gallery {
         list-style: none;
     }
 
     &__gallery-img {
         max-width: 100%;
+    }
+
+    &__footer,
+    &__footer p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.7;
+        color: $color_dark;
     }
 
 }
