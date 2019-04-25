@@ -3,8 +3,8 @@ layout: suite
 permalink: /elwha/
 has_slider: true
 title: The Elwha suite
-hero_image: /images/suites/elwha/IMG_3459.jpg
-hero_text: the Elwha suite
+header_image: /images/suites/elwha/IMG_3459.jpg
+header_text: the Elwha suite
 info: |-
     Thoughtfully furnished with an open living/kitchen/dining area and spectacular view, the Elwha suite is a perfect vacation base for two couples or a family.
 description: |-

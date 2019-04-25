@@ -2,8 +2,8 @@
 layout: contact
 permalink: /contact/
 title: Contact Us
-hero_image: /assets/img/header-bg.jpg
-hero_text: 'Contact info & how to get here'
+header_image: /images/IMG_1855.jpg
+header_text: 'Contact info & how to get here'
 info:
   heading: Ferry Landing Suites
   details: |-
