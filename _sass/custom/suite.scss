@@ -2,12 +2,29 @@
 
     & h2.suite__heading {
         color: $color_muted;
-        font-size: 25px;
+        font-size: 22px;
         @media (min-width: 480px) {
             font-size: 30px;
         }
         @media (min-width: 768px) {
             font-size: 40px;
+        }
+    }
+
+    &__info {
+        padding: 0 0 30px;
+        @media (min-width: 992px) {
+            padding: 0 0 40px;
+        }
+        @media (min-width: 1200px) {
+            padding: 0 0 50px;
+        }
+    }
+
+    &__info-row {
+        margin-left: 0;
+        @media (min-width: 768px) {
+            margin-left: -15px;
         }
     }
 
