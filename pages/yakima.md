@@ -24,10 +24,12 @@ button:
     text: Book the Yakima Suite
     url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67007
 images:
-    - path: /images/suites/elwha/IMG_3458.jpg
-    - path: /images/suites/elwha/IMG_3459.jpg
-    - path: /images/suites/elwha/IMG_3474.jpg
-    - path: /images/suites/elwha/IMG_3492.jpg
-    - path: /images/suites/elwha/IMG_3495.jpg
-    - path: /images/suites/elwha/IMG_3497.jpg
+    - path: /images/suites/yakima/IMG_3486.jpg
+    - path: /images/suites/yakima/IMG_3492.jpg
+    - path: /images/suites/yakima/IMG_3495.jpg
+    - path: /images/suites/yakima/IMG_3497.jpg
+    - path: /images/suites/yakima/IMG_3504.jpg
+    - path: /images/suites/yakima/IMG_3508.jpg
+    - path: /images/suites/yakima/IMG_3513.jpg
+    - path: /images/suites/yakima/IMG_3521.jpg
 ---
