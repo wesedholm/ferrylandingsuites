@@ -3,6 +3,7 @@ layout: suite
 permalink: /elwha/
 has_slider: true
 title: The Elwha suite
+hero_image: /images/suites/elwha/IMG_3459.jpg
 hero_text: the Elwha suite
 info: |-
     Thoughtfully furnished with an open living/kitchen/dining area and spectacular view, the Elwha suite is a perfect vacation base for two couples or a family.
@@ -15,11 +16,11 @@ description: |-
     - spacious bath with shower
     - reserved parking space
 footer:
-    message: 'the ELWHA suite: a panoramic flat in the heart of Friday Harbor'
+    message: 'The ELWHA suite: a panoramic flat in the heart of Friday Harbor'
     contact: 'Call 800.391.8190 for reservations'
 button:
-    text: Book the Yakima Suite
-    url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67007
+    text: Book the Elwha Suite
+    url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67008
 images:
     - path: /images/suites/elwha/IMG_3458.jpg
     - path: /images/suites/elwha/IMG_3459.jpg
