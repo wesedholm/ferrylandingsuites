@@ -9,6 +9,15 @@
 <script src="{{ "/assets/js/classie.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/cbpAnimatedHeader.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/parallax.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/scrollClass.min.js" | relative_url }}"></script>
+<script>
+  $(document).ready(function() {
+    $('.site-footer__content').scrollClass({
+      delay: 50,
+      threshold: 60
+    });
+  });
+</script>
 {%- if page.has_slider == true -%}
     <script src="{{ "/assets/js/lightslider.min.js" | relative_url }}"></script>
     <script type="text/javascript">
