@@ -8,15 +8,21 @@ header_text: the Yakima suite
 info: |-
     A romantic loft getaway with non-stop views of the harbor and all the comforts of home.
 description: |-
-    - open plan studio apartment
-    - private balcony and private deck, both overlooking the harbor
-    - queen bed in alcove
-    - kitchenette
-    - living area with full-size sleeper sofa
-    - elevated desk/dining table with harbor view
-    - dining table for 4
-    - spacious bath with shower
-    - reserved parking space
+    Ferry Landing suites: The Yakima Suite.
+
+    The word _Yakima_ means "Gateway". So, come runaway to your third floor loft in the heart of Friday Harbor.
+
+    The Yakima Suite is a cozy one-room studio, beautifully furnished with a:
+
+    - Open plan studio apartment
+    - Private balcony and private deck, both overlooking the harbor
+    - Queen bed in alcove
+    - Kitchenette
+    - Living area with full-size sleeper sofa
+    - Elevated desk/dining table with harbor view
+    - Dining table for 4
+    - Spacious bath with shower
+    - Reserved parking space
 footer:
     message: 'The YAKIMA suite: top of the town studio in Friday Harbor'
     contact: 'Call 800.391.8190 for reservations'

@@ -8,13 +8,19 @@ header_text: the Elwha suite
 info: |-
     Thoughtfully furnished with an open living/kitchen/dining area and spectacular view, the Elwha suite is a perfect vacation base for two couples or a family.
 description: |-
-    - living room with queen sleeper sofa
-    - dining area for 6
-    - full-size kitchen
+    Ferry Landing Suites: The Elwha Suite.
+    
+    Tastefully appointed with tile floors and comfortable furnishings including a full-sized sofa, this large suite is perfect for two couples or a family.
+
+    The Elwha Suite is a spacious two-bedroom abode including:
+
+    - Living room with queen sleeper sofa
+    - Dining area for 6
+    - Full-size kitchen
     - 2 bedrooms, each with king bed
-    - private deck (seating for 4+) overlooking the harbor
-    - spacious bath with shower
-    - reserved parking space
+    - Private deck (seating for 4+) overlooking the harbor
+    - Spacious bath with shower
+    - Reserved parking space
 footer:
     message: 'The ELWHA suite: a panoramic flat in the heart of Friday Harbor'
     contact: 'Call 800.391.8190 for reservations'

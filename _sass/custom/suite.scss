@@ -28,7 +28,8 @@
         }
     }
 
-    &__description {
+    &__description,
+    &__description p {
         color: $color_muted;
         font-size: 17px;
         line-height: 1.6;
