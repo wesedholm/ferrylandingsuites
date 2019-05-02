@@ -8,7 +8,7 @@ header_text: the Yakima suite
 info: |-
     A romantic loft getaway with non-stop views of the harbor and all the comforts of home.
 description: |-
-    Ferry Landing suites: The Yakima Suite.
+    Ferry Landing Suites: The Yakima Suite.
 
     The word _Yakima_ means "Gateway". So, come runaway to your third floor loft in the heart of Friday Harbor.
 

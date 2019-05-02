@@ -21,7 +21,7 @@ the_suites:
       text: 'View Details'
       url: '/elwha/'
     photo:
-      path: images/FLS-building-070115-11-home-page.jpg
+      path: /images/suites/elwha/IMG_5296-cam01.jpg
       alt_text: 'The Elwha Suite'
     book:
       text: 'Book the Elwha Suite'

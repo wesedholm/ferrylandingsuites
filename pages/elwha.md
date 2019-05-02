@@ -28,6 +28,19 @@ button:
     text: Book the Elwha Suite
     url: http://www.vacationrentalssanjuanislands.com/Unit/Details/67008
 images:
+    - path: /images/suites/elwha/IMG_3338.jpg
+    - path: /images/suites/elwha/IMG_3352.jpg
+    - path: /images/suites/elwha/IMG_3362.jpg
+    - path: /images/suites/elwha/IMG_5282-cam01.jpg
+    - path: /images/suites/elwha/IMG_5286-cam01.jpg
+    - path: /images/suites/elwha/IMG_5290-cam01.jpg
+    - path: /images/suites/elwha/IMG_5293-cam01.jpg
+    - path: /images/suites/elwha/IMG_5296-cam01.jpg
+    - path: /images/suites/elwha/IMG_5312-cam01.jpg
+    - path: /images/suites/elwha/IMG_5321-alt-cam01.jpg
+    - path: /images/suites/elwha/IMG_5327-cam01.jpg
+    - path: /images/suites/elwha/IMG_5333-cam01.jpg
+    - path: /images/suites/elwha/IMG_5338-cam01.jpg
     - path: /images/suites/elwha/IMG_3458.jpg
     - path: /images/suites/elwha/IMG_3459.jpg
     - path: /images/suites/elwha/IMG_3533.jpg
